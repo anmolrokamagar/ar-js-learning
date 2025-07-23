@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operators</title>
+    <script>
+        var a = 10; 
+        var b = 10;
+
+        //console.log(2 != 3);// it show true in console because it says 2 is not equal to 3.
+        //console.log(2 != 2);// it show false in console because it says 2 is not equal to 2.
+        console.log(2 != '2');// it show false in console because it says 2 is not equal to '2'.
+        console.log(2 !== '2');// it show true in console because it says 2 is not equal to '2' or data is '2'.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- Comparing 2 !== '2'
+
+    2 (Number)
+    '2' (String)
+Since one is a number and the other is a string, their types are different, so JavaScript immediately evaluates the expression as true, without attempting type conversion.
+
+Difference from !=:
+If you had used != (loose inequality), JavaScript would have converted the string '2' into a number and compared 2 != 2, which would return false.
+
+Example:
+js
+console.log(2 != '2');  // false (because JS converts '2' to a number)
+console.log(2 !== '2'); // true  (because types are different)
+Summary:
+!== does not perform type conversion.
+Since 2 (number) and '2' (string) have different types, 2 !== '2' evaluates to true. -->
